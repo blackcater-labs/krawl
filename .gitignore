@@ -23,7 +23,7 @@ coverage/
 **/cypress/videos
 
 # turbo
-**/.turbo/**
+**/.turbo
 
 # temp
 **/tmp

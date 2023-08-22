@@ -10,6 +10,7 @@
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
+    "clean": "turbo clean",
     "taze": "taze minor -r",
     "taze:major": "taze major -r"
   },

@@ -18,19 +18,13 @@
   },
   "scripts": {
     "dev": "esno src/cli.ts",
+    "dev:stub": "unbuild --stub",
     "build": "unbuild",
     "clean": "rimraf dist"
   },
-  "dependencies": {
-    "adm-zip": "^0.5.10",
-    "commander": "^11.0.0",
-    "hookable": "5.5.3",
-    "node-unrar-js": "^2.0.0",
-    "xml2js": "^0.6.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/adm-zip": "^0.5.0",
-    "@types/node": "^20.5.2",
+    "@types/node": "^20.5.3",
     "esno": "^0.17.0",
     "rimraf": "^5.0.1",
     "unbuild": "^1.2.1"
