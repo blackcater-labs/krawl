@@ -1,0 +1,28 @@
+# os
+.DS_Store
+
+# editor
+.idea/
+!.vscode/settings.json
+.fleet/
+
+# build
+build/
+!apps/desktop/build
+dist/
+release/
+
+# node
+node_modules
+
+# test
+coverage/
+
+# cypress
+**/cypress/screenshots
+**/cypress/videos
+
+# temp
+**/tmp
+**/temp
+**/cache

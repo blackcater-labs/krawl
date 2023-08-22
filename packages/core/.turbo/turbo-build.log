@@ -1,0 +1,15 @@
+
+> @krawl/core@0.0.1 build /Users/blackcater/Workspace/Codes/proj/krawl/packages/core
+> unbuild
+
+ℹ Building @krawl/core
+Generated an empty chunk: "index".
+Generated an empty chunk: "index".
+Generated an empty chunk: "index".
+✔ Build succeeded for core
+  dist/index.cjs (total size: 15 B, chunk size: 15 B)
+
+  dist/index.mjs (total size: 1 B, chunk size: 1 B)
+
+Σ Total dist size (byte size): 28 B
+

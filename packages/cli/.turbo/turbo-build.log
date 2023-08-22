@@ -1,0 +1,32 @@
+
+> @krawl/cli@0.0.1 build /Users/blackcater/Workspace/Codes/proj/krawl/packages/cli
+> unbuild
+
+ℹ Building @krawl/cli
+Generated an empty chunk: "index".
+Generated an empty chunk: "cli".
+Generated an empty chunk: "index".
+Generated an empty chunk: "cli".
+error TS6053: File '/Users/blackcater/Workspace/Codes/proj/krawl/packages/core/dist/index.d.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation
+
+Error building /Users/blackcater/Workspace/Codes/proj/krawl/packages/cli: RollupError: Failed to compile. Check the logs above.
+Error [RollupError]: Failed to compile. Check the logs above.
+    at error (file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup@3.28.1/node_modules/rollup/dist/es/shared/node-entry.js:2287:30)
+    at Object.error (file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup@3.28.1/node_modules/rollup/dist/es/shared/node-entry.js:25268:20)
+    at Object.error (file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup@3.28.1/node_modules/rollup/dist/es/shared/node-entry.js:24390:42)
+    at generateDtsFromTs (file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup-plugin-dts@5.3.1_rollup@3.28.1_typescript@5.1.6/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs:1698:30)
+    at Object.transform (file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup-plugin-dts@5.3.1_rollup@3.28.1_typescript@5.1.6/node_modules/rollup-plugin-dts/dist/rollup-plugin-dts.mjs:1707:38)
+    at file:///Users/blackcater/Workspace/Codes/proj/krawl/node_modules/.pnpm/registry.npmmirror.com+rollup@3.28.1/node_modules/rollup/dist/es/shared/node-entry.js:25461:40
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  id: '/Users/blackcater/Workspace/Codes/proj/krawl/packages/cli/src/cli.ts',
+  hook: 'resolveId',
+  code: 'PLUGIN_ERROR',
+  plugin: 'commonjs--resolver',
+  watchFiles: [
+    '/Users/blackcater/Workspace/Codes/proj/krawl/packages/cli/src/index.ts',
+    '/Users/blackcater/Workspace/Codes/proj/krawl/packages/cli/src/cli.ts'
+  ]
+}
+ ELIFECYCLE  Command failed with exit code 1.
