@@ -12,7 +12,13 @@
     "skipLibCheck": true,
     "jsx": "preserve",
     "types": ["node"],
-    "paths": {}
+    "paths": {
+      "@krawl/archive": ["./packages/archive/src/index.ts"],
+      "@krawl/cli": ["./packages/cli/src/index.ts"],
+      "@krawl/core": ["./packages/core/src/index.ts"],
+      "@krawl/ui": ["./packages/ui/node/index.ts"],
+      "@krawl/utils": ["./packages/utils/src/index.ts"]
+    }
   },
   "exclude": ["**/node_modules/**"]
 }

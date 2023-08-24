@@ -1,5 +1,5 @@
 {
-  "name": "@krawl/cli",
+  "name": "@krawl/archive",
   "version": "0.0.1",
   "description": "",
   "type": "module",
@@ -13,22 +13,19 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "bin": {
-    "krawl": "./bin/krawl.mjs"
-  },
   "scripts": {
-    "dev": "esno src/cli.ts",
     "dev:stub": "unbuild --stub",
     "build": "unbuild",
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@krawl/core": "workspace:*",
-    "cac": "^6.7.14"
+    "adm-zip": "^0.5.10",
+    "node-unrar-js": "^2.0.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@types/adm-zip": "^0.5.0",
     "@types/node": "^20.5.4",
-    "esno": "^0.17.0",
     "rimraf": "^5.0.1",
     "unbuild": "^2.0.0"
   }

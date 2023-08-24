@@ -19,16 +19,13 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "adm-zip": "^0.5.10",
-    "commander": "^11.0.0",
     "hookable": "5.5.3",
-    "node-unrar-js": "^2.0.0",
-    "xml2js": "^0.6.2"
+    "local-pkg": "^0.4.3",
+    "tinypool": "^0.8.0"
   },
   "devDependencies": {
-    "@types/adm-zip": "^0.5.0",
-    "@types/node": "^20.5.3",
+    "@types/node": "^20.5.4",
     "rimraf": "^5.0.1",
-    "unbuild": "^1.2.1"
+    "unbuild": "^2.0.0"
   }
 }
