@@ -16,7 +16,7 @@
     "dev": "vite",
     "dev:node:stub": "unbuild --stub",
     "build": "pnpm build:client && pnpm build:node",
-    "build:client": "vue-tsc && vite build",
+    "build:client": "vue-tsc --noEmit && vite build",
     "build:node": "unbuild",
     "preview": "vite preview",
     "clean": "rimraf dist"

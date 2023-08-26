@@ -85,6 +85,9 @@ importers:
 
   packages/core:
     dependencies:
+      '@krawl/types':
+        specifier: workspace:*
+        version: link:../types
       hookable:
         specifier: 5.5.3
         version: registry.npmmirror.com/hookable@5.5.3
@@ -94,6 +97,30 @@ importers:
       tinypool:
         specifier: ^0.8.0
         version: registry.npmmirror.com/tinypool@0.8.0
+    devDependencies:
+      '@types/node':
+        specifier: ^20.5.6
+        version: registry.npmmirror.com/@types/node@20.5.6
+      rimraf:
+        specifier: ^5.0.1
+        version: registry.npmmirror.com/rimraf@5.0.1
+      unbuild:
+        specifier: ^2.0.0
+        version: registry.npmmirror.com/unbuild@2.0.0(typescript@5.2.2)
+
+  packages/test-utils:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.5.6
+        version: registry.npmmirror.com/@types/node@20.5.6
+      rimraf:
+        specifier: ^5.0.1
+        version: registry.npmmirror.com/rimraf@5.0.1
+      unbuild:
+        specifier: ^2.0.0
+        version: registry.npmmirror.com/unbuild@2.0.0(typescript@5.2.2)
+
+  packages/types:
     devDependencies:
       '@types/node':
         specifier: ^20.5.6

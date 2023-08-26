@@ -16,6 +16,8 @@
       "@krawl/archive": ["./packages/archive/src/index.ts"],
       "@krawl/cli": ["./packages/cli/src/index.ts"],
       "@krawl/core": ["./packages/core/src/index.ts"],
+      "@krawl/test-utils": ["./packages/test-utils/src/index.ts"],
+      "@krawl/types": ["./packages/types/src/index.ts"],
       "@krawl/ui": ["./packages/ui/node/index.ts"],
       "@krawl/utils": ["./packages/utils/src/index.ts"]
     }

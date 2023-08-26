@@ -1,5 +1,5 @@
 {
-  "name": "@krawl/core",
+  "name": "@krawl/types",
   "version": "0.0.1",
   "description": "",
   "type": "module",
@@ -18,12 +18,7 @@
     "build": "unbuild",
     "clean": "rimraf dist"
   },
-  "dependencies": {
-    "@krawl/types": "workspace:*",
-    "hookable": "5.5.3",
-    "local-pkg": "^0.4.3",
-    "tinypool": "^0.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.5.6",
     "rimraf": "^5.0.1",
