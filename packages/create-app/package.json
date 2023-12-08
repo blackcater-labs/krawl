@@ -1,5 +1,5 @@
 {
-  "name": "@krawl/test-utils",
+  "name": "@krawl/create-app",
   "type": "module",
   "version": "0.0.1",
   "description": "",
@@ -9,11 +9,11 @@
     "url": "https://www.blackcater.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/test-utils#readme",
+  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/create-app#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blackcater-labs/krawl.git",
-    "directory": "packages/test-utils"
+    "directory": "packages/create-app"
   },
   "bugs": {
     "url": "https://github.com/blackcater-labs/krawl/issues"
@@ -31,6 +31,9 @@
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "bin": {
+    "create-app": "./bin/create-app.mjs"
+  },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@krawl/test-utils",
+  "name": "@krawl/driver-puppeteer",
   "type": "module",
   "version": "0.0.1",
   "description": "",
@@ -9,11 +9,11 @@
     "url": "https://www.blackcater.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/test-utils#readme",
+  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/driver-puppeteer#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blackcater-labs/krawl.git",
-    "directory": "packages/test-utils"
+    "directory": "packages/driver-puppeteer"
   },
   "bugs": {
     "url": "https://github.com/blackcater-labs/krawl/issues"
