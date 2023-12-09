@@ -20,6 +20,7 @@
     "dev:docs": "pnpm run --filter docs dev",
     "dev:ui": "pnpm run --filter ui dev",
     "build": "turbo build",
+    "build:docs": "pnpm run --filter docs build",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
