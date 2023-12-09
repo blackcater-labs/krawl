@@ -1,18 +1,28 @@
 {
   "compilerOptions": {
     "target": "ES2018",
-    "module": "ESNext",
+    "jsx": "preserve",
     "lib": ["ESNext"],
+    "module": "ESNext",
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "paths": {
+      "@krawl/archive": ["./packages/archive/src/index.ts"],
+      "@krawl/cli": ["./packages/cli/src/index.ts"],
+      "@krawl/core": ["./packages/core/src/index.ts"],
+      "@krawl/create-app": ["./packages/create-app/src/index.ts"],
+      "@krawl/driver-puppeteer": ["./packages/driver-puppeteer/src/index.ts"],
+      "@krawl/robotstxt": ["./packages/robotstxt/src/index.ts"],
+      "@krawl/test-utils": ["./packages/test-utils/src/index.ts"],
+      "@krawl/types": ["./packages/types/src/index.ts"],
+      "@krawl/utils": ["./packages/utils/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "types": ["node"],
     "strict": true,
     "strictNullChecks": true,
-    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "jsx": "preserve",
-    "types": ["node"],
-    "paths": {}
+    "skipLibCheck": true
   },
   "exclude": ["**/node_modules/**"]
 }

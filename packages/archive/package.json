@@ -1,0 +1,53 @@
+{
+  "name": "@krawl/archive",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "blackcater <Elon Tang>",
+    "email": "i@blackcater.dev",
+    "url": "https://www.blackcater.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/archive#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackcater-labs/krawl.git",
+    "directory": "packages/archive"
+  },
+  "bugs": {
+    "url": "https://github.com/blackcater-labs/krawl/issues"
+  },
+  "keywords": [
+    "krawl"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "scripts": {
+    "dev:stub": "unbuild --stub",
+    "build": "unbuild",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "node-unrar-js": "^2.0.2",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/node": "^20.10.4",
+    "rimraf": "^5.0.5",
+    "unbuild": "^2.0.0"
+  }
+}
