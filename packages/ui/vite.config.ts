@@ -6,10 +6,6 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [React(), Inspect()],
 
-  server: {
-    hmr: false,
-  },
-
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
