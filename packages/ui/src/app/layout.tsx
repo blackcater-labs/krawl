@@ -3,6 +3,7 @@ import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { LngToggle } from '@/components/LngToggle'
 
 function RootLayout() {
   return (
@@ -10,6 +11,7 @@ function RootLayout() {
       <ScrollArea className="h-screen w-screen">
         <main>
           <h1 className="m-4 text-primary">hello world</h1>
+          <LngToggle />
           <ThemeToggle />
           <Outlet />
         </main>

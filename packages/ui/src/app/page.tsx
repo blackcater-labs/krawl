@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
+
 function IndexPage() {
+  const { t } = useTranslation('Index')
+
   return (
-    <div>IndexPage</div>
+    <h1>{t('h1')}</h1>
   )
 }
 
