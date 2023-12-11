@@ -14,7 +14,7 @@ export function SearchBar() {
           <span className="mr-4">Search...</span>
           <Badge variant="secondary">
             <span className="text-xs">⌘</span>
-            K
+            P
           </Badge>
         </Button>
       </DialogTrigger>
