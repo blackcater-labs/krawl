@@ -30,7 +30,7 @@
     "taze:major": "taze major -r"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.3",
+    "@antfu/eslint-config": "^2.4.4",
     "@eslint/eslintrc": "^2.1.4",
     "@types/node": "^20.10.4",
     "@vitest/coverage-v8": "^1.0.4",
