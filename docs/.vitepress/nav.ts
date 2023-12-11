@@ -1,60 +1,52 @@
 import type { DefaultTheme } from 'vitepress/types'
 
-export const Guides: DefaultTheme.NavItemWithLink[] = [
-  { text: 'Getting Started', link: '/guide/' },
-  { text: 'Why Krawl?', link: '/guide/why' },
-]
-
-export const Configs: DefaultTheme.NavItemWithLink[] = [
-  { text: 'Overview', link: '/config/' },
-]
-
-export const Plugins: DefaultTheme.NavItemWithLink[] = [
-  { text: 'IMDB', link: '/plugins/imdb' },
-  { text: 'Douban', link: '/plugins/douban' },
-]
-
 export const Nav: DefaultTheme.NavItem[] = [
   {
     text: 'Guide',
     items: [
-      {
-        text: 'Guide',
-        items: Guides,
-      },
+      { text: 'Getting Started', link: '/guide/' },
+      { text: 'Why Krawl?', link: '/guide/why' },
     ],
     activeMatch: '^/guide/',
-  },
-  {
-    text: 'Config',
-    items: [
-      {
-        text: 'Config File',
-        link: '/guide/config-file',
-      },
-      {
-        text: 'Concepts',
-        items: Configs,
-      },
-    ],
-    activeMatch: '^/config/',
   },
   {
     text: 'Plugins',
     items: [
       {
         text: 'Overview',
-        link: '/plugins/',
+        link: '/plugin/',
       },
       {
-        text: 'Community Presets',
-        link: '/plugins/community',
-      },
-      {
-        text: 'Plugins',
-        items: Plugins,
+        items: [
+          { text: 'Metaorg', link: '/plugin/metaorg' },
+          {
+            text: 'Others',
+            link: '/plugin/community',
+          },
+        ],
       },
     ],
-    activeMatch: '^/plugins/',
+    activeMatch: '^/plugin/',
+  },
+]
+
+export const NavZhCN: DefaultTheme.NavItem[] = [
+  {
+    text: '指南',
+    items: [
+      { text: '为何选择 Krawl ?', link: '/zh-CN/guide/why' },
+      { text: '快速开始', link: '/zh-CN/guide/' },
+    ],
+    activeMatch: '^/zh-CN/guide/',
+  },
+  {
+    text: '插件',
+    items: [
+      {
+        text: '概览',
+        link: '/zh-CN/plugin/',
+      },
+    ],
+    activeMatch: '^/zh-CN/plugin/',
   },
 ]

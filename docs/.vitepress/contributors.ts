@@ -41,7 +41,17 @@ const plainTeamMembers: CoreTeam[] = [
     desc: 'Core team member of Krawl & Mmmc',
   },
 ]
-
 const teamMembers = plainTeamMembers.map(tm => createLinks(tm))
 
-export { teamMembers }
+const plainTeamMembersZhCN: CoreTeam[] = [
+  {
+    avatar: 'https://github.com/blackcater.png',
+    name: 'Elon Tang',
+    github: 'blackcater',
+    twitter: 'tang_elon',
+    desc: 'Krawl & Mmmc 项目核心成员',
+  },
+]
+const teamMembersZhCN = plainTeamMembersZhCN.map(tm => createLinks(tm))
+
+export { teamMembers, teamMembersZhCN }

@@ -23,19 +23,19 @@ features:
     details: Built in TypeScript to improve the development experience
   - icon: <span class="i-mdi:google-chrome"></span>
     title: Headless
-    details: You can crawl CSR website with headless mode
-  - icon: <span class="i-carbon:data-class"></span>
+    details: CSR website is not a headache, you can crawl any website you want
+  - icon: <span class="i-mdi:package-variant-closed"></span>
     title: Plugin
-    details: Extract logcis to plugins, making your crawler more powerful
-  - icon: <span class="i-carbon:data-refinery"></span>
-    title: Queue
-    details: Saving your progress with queue, and you can resume it later
-  - icon: <span class="i-carbon:file-storage"></span>
-    title: Storage
-    details: Save files, screenshots, and other data to disk
-  - icon: <span class="i-carbon:cloud-monitoring"></span>
+    details: Extract logcis to plugins, support more powerful features
+  - icon: <span class="i-mdi:application-braces-outline"></span>
     title: UI Mode
     details: Eazy to config and monitor your crawler with UI
+  - icon: <span class="i-mdi:desktop-mac"></span>
+    title: Desktop App <span class="text-xs text-pink">WIP</span>
+    details: More convenient for general user to start crawling what they want
+  - icon: <span class="i-mdi:microsoft-visual-studio-code"></span>
+    title: VSCode Extension <span class="text-xs text-pink">WIP</span>
+    details: More convenient for developer user to create own crawler
 ---
 
 <script setup lang="ts">

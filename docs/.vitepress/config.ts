@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { Nav } from './nav'
-import { SidebarGuide } from './sidebar'
+import { Nav, NavZhCN } from './nav'
+import { SidebarOne, SidebarOneZhCN } from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,7 +10,7 @@ export default defineConfig({
 
   title: 'Krawl',
   titleTemplate: 'Krawl - next generation web crawler',
-  description: 'A node.js crawler framework. Brings you better user and development experience.',
+  description: 'A node.js crawler framework. Brings you better use and develop experiences.',
   head: [],
 
   lang: 'en-US',
@@ -26,6 +26,12 @@ export default defineConfig({
       link: '/zh-CN/',
 
       themeConfig: {
+        nav: NavZhCN,
+        sidebar: {
+          '/zh-CN/guide/': SidebarOneZhCN,
+          '/zh-CN/config/': SidebarOneZhCN,
+          '/zh-CN/plugin/': SidebarOneZhCN,
+        },
       },
     },
   },
@@ -33,7 +39,9 @@ export default defineConfig({
   themeConfig: {
     nav: Nav,
     sidebar: {
-      '/guide/': SidebarGuide,
+      '/guide/': SidebarOne,
+      '/config/': SidebarOne,
+      '/plugin/': SidebarOne,
     },
 
     logo: '/logo.svg',
