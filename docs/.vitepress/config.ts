@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { Nav, NavZhCN } from './nav'
-import { SidebarOne, SidebarOneZhCN } from './sidebar'
+import { SidebarExampleZhCN, SidebarOne, SidebarOneZhCN, SidebarPluginZhCN } from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -29,8 +29,8 @@ export default defineConfig({
         nav: NavZhCN,
         sidebar: {
           '/zh-CN/guide/': SidebarOneZhCN,
-          '/zh-CN/config/': SidebarOneZhCN,
-          '/zh-CN/plugin/': SidebarOneZhCN,
+          '/zh-CN/examples/': SidebarExampleZhCN,
+          '/zh-CN/plugin/': SidebarPluginZhCN,
         },
       },
     },
@@ -41,6 +41,7 @@ export default defineConfig({
     sidebar: {
       '/guide/': SidebarOne,
       '/config/': SidebarOne,
+      '/examples/': SidebarOne,
       '/plugin/': SidebarOne,
     },
 

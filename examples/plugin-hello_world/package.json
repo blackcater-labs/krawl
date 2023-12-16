@@ -1,0 +1,55 @@
+{
+  "name": "@example/plugin-hello_world",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": {
+    "name": "blackcater <Elon Tang>",
+    "email": "i@blackcater.dev",
+    "url": "https://www.blackcater.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/robotstxt#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackcater-labs/krawl.git",
+    "directory": "packages/robotstxt"
+  },
+  "bugs": {
+    "url": "https://github.com/blackcater-labs/krawl/issues"
+  },
+  "keywords": [
+    "krawl",
+    "krawl-plugin"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "scripts": {
+    "dev": "krawl dev",
+    "build": "krawl build",
+    "ui": "krawl ui",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "@krawl/core": "workspace:*"
+  },
+  "dependencies": {
+    "@krawl/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "rimraf": "^5.0.5"
+  }
+}

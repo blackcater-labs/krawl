@@ -49,4 +49,12 @@ export const NavZhCN: DefaultTheme.NavItem[] = [
     ],
     activeMatch: '^/zh-CN/plugin/',
   },
+  { text: '案例', link: '/zh-CN/examples/' },
+  {
+    text: '参考',
+    items: [
+      { text: '@krawl/cli', link: '/zh-CN/guide/krawl-cli' },
+      { text: 'krawl.config.ts', link: '/zh-CN/config/krawl-config' },
+    ],
+  },
 ]
