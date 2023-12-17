@@ -1,7 +1,7 @@
-import { defineConfig } from '@krawl/cli'
+import { defineConfig } from '@krawl/core'
 
 export default defineConfig({
-  build: {}, // unbuild config
+  build: {},
 
-  server: {}, // express config
+  server: {},
 })
