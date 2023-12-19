@@ -1,5 +1,7 @@
+import type { BrowserOptions } from './browser'
 import type { LoggerOptions } from './logger'
 import type { Plugin } from './plugin'
+import type { PartialByKeys, RequiredByKeys } from './utils'
 
 export interface BasicOptions {
   /**
@@ -29,6 +31,7 @@ export interface BasicOptions {
   name?: string
 }
 export type UserLoggerOptions = Omit<LoggerOptions, 'debug' | 'name'>
+export type UserBrowserOptions = BrowserOptions
 export interface UserOptions extends BasicOptions {
   /**
    * Plugins to be applied to the project.
@@ -39,11 +42,17 @@ export interface UserOptions extends BasicOptions {
    * Logger options.
    */
   logger?: UserLoggerOptions
+
+  /**
+   * Browser options.
+   */
+  browser?: UserBrowserOptions
 }
 export type UserConfig = UserOptions
 
 export type BasicConfig = Required<BasicOptions>
 export type LoggerConfig = Required<LoggerOptions>
+export type BrowserConfig = PartialByKeys<Required<BrowserOptions>, 'defaultArgs' | 'executablePath'>
 export interface ResolvedConfig extends BasicConfig {
   /**
    * Plugins to be applied to the project.
@@ -54,4 +63,9 @@ export interface ResolvedConfig extends BasicConfig {
    * Logger options.
    */
   logger: LoggerConfig
+
+  /**
+   * Browser options.
+   */
+  browser: BrowserConfig
 }

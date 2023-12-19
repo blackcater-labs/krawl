@@ -25,7 +25,7 @@ export interface LoggerOptions {
   level?: LogLevel
 
   /**
-   * The log directory of the logger.
+   * The log directory of the logger. Path is relative to the data directory.
    *
    * @default 'logs'
    */

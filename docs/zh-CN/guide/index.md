@@ -51,3 +51,9 @@ npm ui
 ```
 
 :::
+
+::: details CHINA USER
+
+PUPPETEER_DOWNLOAD_BASE_URL=https://registry.npmmirror.com/binary.html?path=chrome-for-testing
+
+:::
