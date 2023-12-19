@@ -24,6 +24,10 @@
     "nextjs",
     "react"
   ],
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
