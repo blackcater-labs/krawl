@@ -8,6 +8,5 @@ export const alias: Record<string, string> = {
   '@krawl/core': r('./packages/core/src/'),
   '@krawl/robotstxt': r('./packages/robotstxt/src/'),
   '@krawl/test-utils': r('./packages/test-utils/src/'),
-  '@krawl/types': r('./packages/types/src/'),
   '@krawl/utils': r('./packages/utils/src/'),
 }

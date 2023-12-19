@@ -1,3 +1,2 @@
-export * from '@krawl/types'
-export * from './config'
-export * from './engine'
+export * from './types'
+export * from './krawl'

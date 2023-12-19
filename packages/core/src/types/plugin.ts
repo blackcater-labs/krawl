@@ -1,6 +1,4 @@
-import type { Server } from 'node:net'
 import type { ResolvedConfig, UserConfig } from './config'
-import type { Awaitable } from './utils'
 
 export interface Plugin {
   /**
@@ -16,14 +14,12 @@ export interface Plugin {
   /**
    * Modify the config
    */
-  config?: (config: UserConfig) => Awaitable<UserConfig>
+  config?: (config: UserConfig) => void
 
   /**
    * Modify the config after it has been resolved
    */
-  configResolved?: (config: ResolvedConfig) => Awaitable<void>
-
-  configureServer?: (server: Server) => Awaitable<void>
+  configResolved?: (config: ResolvedConfig) => void
 }
 
 export interface PluginContext {}
