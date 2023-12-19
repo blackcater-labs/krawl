@@ -1,5 +1,5 @@
 {
-  "name": "@example/plugin-hello_world",
+  "name": "@examples/plugin-hello_world",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -10,11 +10,11 @@
     "url": "https://www.blackcater.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/packages/robotstxt#readme",
+  "homepage": "https://github.com/blackcater-labs/krawl/tree/main/examples/plugin-hello_world#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blackcater-labs/krawl.git",
-    "directory": "packages/robotstxt"
+    "directory": "examples/plugin-hello_world"
   },
   "bugs": {
     "url": "https://github.com/blackcater-labs/krawl/issues"
@@ -37,19 +37,20 @@
     "node": "^18.0.0 || >=20.0.0"
   },
   "scripts": {
-    "dev": "krawl dev",
-    "build": "krawl build",
-    "ui": "krawl ui",
+    "dev": "esno scripts/run.ts",
+    "dev:stub": "unbuild --stub",
+    "build": "unbuild",
     "clean": "rimraf dist"
-  },
-  "peerDependencies": {
-    "@krawl/core": "workspace:*"
   },
   "dependencies": {
     "@krawl/utils": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^20.10.4",
-    "rimraf": "^5.0.5"
+    "@krawl/core": "workspace:*",
+    "@krawl/ui": "workspace:*",
+    "@types/node": "^20.10.5",
+    "esno": "^4.0.0",
+    "rimraf": "^5.0.5",
+    "unbuild": "^2.0.0"
   }
 }

@@ -1,22 +1,24 @@
 import { cac } from 'cac'
 import { VERSION } from './constants'
+import type { CreateCLIOptions, StartCLIOptions } from './types'
+import { start } from './internal/start'
+import { create } from './internal/create'
 
 const cli = cac('krawl')
 
-interface GlobalCLIOptions {
-  '--'?: string[]
-}
+// start
+cli.command('start', 'start krawl server')
+  .action(async (options: StartCLIOptions) => {
+    start(options)
+  })
 
-// cli.option
-
-// dev
-cli.command('[root]', 'start dev server')
-  .alias('dev')
-  .action(async (_root: string, _options: GlobalCLIOptions) => {})
-
-// build
-cli.command('build [root]', 'build for production')
-  .action(async (_root: string, _options: GlobalCLIOptions) => {})
+// create
+cli.command('create [type]', 'create a new project')
+  .alias('init')
+  .alias('new')
+  .action(async (type: string, options: CreateCLIOptions) => {
+    create(type, options)
+  })
 
 cli.help()
 cli.version(VERSION)

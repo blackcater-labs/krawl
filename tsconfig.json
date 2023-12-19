@@ -10,10 +10,10 @@
       "@krawl/cli": ["./packages/cli/src/index.ts"],
       "@krawl/core": ["./packages/core/src/index.ts"],
       "@krawl/create-app": ["./packages/create-app/src/index.ts"],
-      "@krawl/driver-puppeteer": ["./packages/driver-puppeteer/src/index.ts"],
       "@krawl/robotstxt": ["./packages/robotstxt/src/index.ts"],
       "@krawl/test-utils": ["./packages/test-utils/src/index.ts"],
       "@krawl/types": ["./packages/types/src/index.ts"],
+      "@krawl/ui": ["./packages/ui/src/index.ts"],
       "@krawl/utils": ["./packages/utils/src/index.ts"]
     },
     "resolveJsonModule": true,

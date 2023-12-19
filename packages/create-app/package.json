@@ -38,13 +38,18 @@
     "node": "^18.0.0 || >=20.0.0"
   },
   "scripts": {
+    "dev": "esno src/cli.ts",
     "dev:stub": "unbuild --stub",
     "build": "unbuild",
     "clean": "rimraf dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "consola": "^3.2.3"
+  },
   "devDependencies": {
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.10.5",
+    "esno": "^4.0.0",
     "rimraf": "^5.0.5",
     "unbuild": "^2.0.0"
   }
