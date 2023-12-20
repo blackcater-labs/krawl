@@ -1,6 +1,6 @@
 import path from 'node:path'
 import pino from 'pino'
-import type { LoggerConfig } from './types'
+import type { LoggerConfig } from '../types'
 
 export function createLogger(config: LoggerConfig) {
   const logger = pino({

@@ -1,8 +1,8 @@
 import process from 'node:process'
 import path from 'node:path'
 import { z } from 'zod'
-import type { BasicConfig, BrowserConfig, LoggerConfig, Optional, Plugin, ResolvedConfig, UserBrowserOptions, UserConfig, UserLoggerOptions } from './types'
-import { runConfigHook, runConfigResolvedHook, sortPlugins } from './plugin'
+import type { BasicConfig, BrowserConfig, LoggerConfig, Optional, Plugin, ResolvedConfig, UserBrowserOptions, UserConfig, UserLoggerOptions } from '../types'
+import { runConfigHook, runConfigResolvedHook, sortPlugins } from '../plugin'
 
 async function resolveBasicConfig(config: UserConfig): Promise<BasicConfig> {
   const schema = z.object({
