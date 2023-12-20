@@ -1,1 +1,3 @@
-export class Scheduler {}
+export class Scheduler {
+  constructor() {}
+}

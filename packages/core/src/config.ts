@@ -1,9 +1,10 @@
 import process from 'node:process'
 import path from 'node:path'
 import { z } from 'zod'
-import type { BasicConfig, BrowserConfig, LoggerConfig, Optional, ResolvedConfig, UserBrowserOptions, UserConfig, UserLoggerOptions } from './types'
+import type { BasicConfig, BrowserConfig, LoggerConfig, Optional, Plugin, ResolvedConfig, UserBrowserOptions, UserConfig, UserLoggerOptions } from './types'
+import { runConfigHook, runConfigResolvedHook, sortPlugins } from './plugin'
 
-function resolveBasicConfig(config: UserConfig): BasicConfig {
+async function resolveBasicConfig(config: UserConfig): Promise<BasicConfig> {
   const schema = z.object({
     name: z.string().optional().default('krawl'),
     debug: z.boolean().optional().default(false),
@@ -17,7 +18,7 @@ function resolveBasicConfig(config: UserConfig): BasicConfig {
   return resolvedConfig
 }
 
-function resolveLoggerConfig(config: Optional<UserLoggerOptions> = {}, basicConfig: BasicConfig): LoggerConfig {
+async function resolveLoggerConfig(config: Optional<UserLoggerOptions> = {}, basicConfig: BasicConfig): Promise<LoggerConfig> {
   const schema = z.object({
     level: z.enum(['trace', 'debug', 'info', 'warn', 'error', 'fatal', 'silent']).optional().default('info'),
     logDir: z.string().optional().default('logs'),
@@ -35,7 +36,7 @@ function resolveLoggerConfig(config: Optional<UserLoggerOptions> = {}, basicConf
   }
 }
 
-function resolveBrowserConfig(config: Optional<UserBrowserOptions> = {}, basicConfig: BasicConfig): BrowserConfig {
+async function resolveBrowserConfig(config: Optional<UserBrowserOptions> = {}, basicConfig: BasicConfig): Promise<BrowserConfig> {
   const schema = z.object({
     headless: z.boolean().optional().default(false),
     executablePath: z.string().optional(),
@@ -53,15 +54,28 @@ function resolveBrowserConfig(config: Optional<UserBrowserOptions> = {}, basicCo
   return resolvedConfig
 }
 
-export function resolveConfig(config: UserConfig): ResolvedConfig {
-  const basicConfig = resolveBasicConfig(config)
-  const loggerConfig = resolveLoggerConfig(config.logger, basicConfig)
-  const browserConfig = resolveBrowserConfig(config.browser, basicConfig)
+async function resolvePlugins(plugins: Plugin[]): Promise<Plugin[]> {
+  const [prevPlugins, normalPlugins, postPlugins] = sortPlugins(plugins)
 
-  return {
+  return [...prevPlugins, ...normalPlugins, ...postPlugins]
+}
+
+export async function resolveConfig(config: UserConfig): Promise<ResolvedConfig> {
+  const plugins = await resolvePlugins(config.plugins || [])
+
+  config = await runConfigHook(config, plugins)
+
+  const basicConfig = await resolveBasicConfig(config)
+  const loggerConfig = await resolveLoggerConfig(config.logger, basicConfig)
+  const browserConfig = await resolveBrowserConfig(config.browser, basicConfig)
+  const resolvedConfig: ResolvedConfig = {
     ...basicConfig,
-    plugins: config.plugins || [],
     logger: loggerConfig,
     browser: browserConfig,
+    plugins,
   }
+
+  await runConfigResolvedHook(resolvedConfig, plugins)
+
+  return resolvedConfig
 }

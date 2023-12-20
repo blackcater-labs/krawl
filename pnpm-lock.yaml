@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.4.6
-        version: 2.4.6(@vue/compiler-sfc@3.3.11)(eslint-plugin-format@0.1.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react-refresh@0.4.5)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.0.4)
+        version: 2.4.6(@vue/compiler-sfc@3.3.11)(eslint-plugin-format@0.1.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react-refresh@0.4.5)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.1.0)
       '@eslint/eslintrc':
         specifier: ^2.1.4
         version: 2.1.4
@@ -18,11 +18,11 @@ importers:
         specifier: ^20.10.5
         version: 20.10.5
       '@vitest/coverage-v8':
-        specifier: ^1.0.4
-        version: 1.0.4(vitest@1.0.4)
+        specifier: ^1.1.0
+        version: 1.1.0(vitest@1.1.0)
       '@vitest/ui':
-        specifier: ^1.0.4
-        version: 1.0.4(vitest@1.0.4)
+        specifier: ^1.1.0
+        version: 1.1.0(vitest@1.1.0)
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
@@ -40,7 +40,7 @@ importers:
         version: 0.4.5(eslint@8.56.0)
       eslint-plugin-tailwindcss:
         specifier: ^3.13.0
-        version: 3.13.0(tailwindcss@3.3.7)
+        version: 3.13.0(tailwindcss@3.4.0)
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
@@ -54,8 +54,8 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
       vitest:
-        specifier: ^1.0.4
-        version: 1.0.4(@types/node@20.10.5)(@vitest/ui@1.0.4)
+        specifier: ^1.1.0
+        version: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
 
   docs:
     devDependencies:
@@ -421,8 +421,8 @@ importers:
         specifier: ^1.0.3
         version: registry.npmmirror.com/@radix-ui/react-switch@1.0.3(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
       '@tanstack/react-query':
-        specifier: ^5.14.1
-        version: 5.14.1(react@18.2.0)
+        specifier: ^5.14.2
+        version: 5.14.2(react@18.2.0)
       '@tanstack/react-router':
         specifier: 0.0.1-beta.248
         version: 0.0.1-beta.248(react-dom@18.2.0)(react@18.2.0)
@@ -473,7 +473,7 @@ importers:
         version: 2.1.0
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.3.7)
+        version: 1.0.7(tailwindcss@3.4.0)
       usehooks-ts:
         specifier: ^2.9.1
         version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
@@ -509,8 +509,8 @@ importers:
         specifier: ^0.4.1
         version: 0.4.1(typescript@5.3.3)
       tailwindcss:
-        specifier: ^3.3.7
-        version: 3.3.7
+        specifier: ^3.4.0
+        version: 3.4.0
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -685,7 +685,7 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
 
-  /@antfu/eslint-config@2.4.6(@vue/compiler-sfc@3.3.11)(eslint-plugin-format@0.1.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react-refresh@0.4.5)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.0.4):
+  /@antfu/eslint-config@2.4.6(@vue/compiler-sfc@3.3.11)(eslint-plugin-format@0.1.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react-refresh@0.4.5)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.1.0):
     resolution: {integrity: sha512-dwRlY//llv3xnzLdSJzjEQQ/uS9p5rdNh7m4k2sqUlo4PsJ9EXBTWnZl6BPJZIGoVZGpDiGBpyO8hG/5I7yLrQ==, tarball: https://registry.npmmirror.com/@antfu/eslint-config/-/eslint-config-2.4.6.tgz}
     hasBin: true
     peerDependencies:
@@ -734,7 +734,7 @@ packages:
       eslint-plugin-toml: 0.8.0(eslint@8.56.0)
       eslint-plugin-unicorn: 49.0.0(eslint@8.56.0)
       eslint-plugin-unused-imports: 3.0.0(@typescript-eslint/eslint-plugin@6.14.0)(eslint@8.56.0)
-      eslint-plugin-vitest: 0.3.17(@typescript-eslint/eslint-plugin@6.14.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.0.4)
+      eslint-plugin-vitest: 0.3.17(@typescript-eslint/eslint-plugin@6.14.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.1.0)
       eslint-plugin-vue: 9.19.2(eslint@8.56.0)
       eslint-plugin-yml: 1.11.0(eslint@8.56.0)
       eslint-processor-vue-blocks: 0.1.1(@vue/compiler-sfc@3.3.11)(eslint@8.56.0)
@@ -2745,16 +2745,16 @@ packages:
     resolution: {integrity: sha512-zkCgf1k5bhFPMgecVXujfBl91BNpAm5BvKeyhR3Gv3lZKpqaJzXMP+aI1jyz7KnxuFMGjAX5t2w8Za3DyIGoZg==, tarball: https://registry.npmmirror.com/@tanstack/history/-/history-0.0.1-beta.248.tgz}
     engines: {node: '>=12'}
 
-  /@tanstack/query-core@5.14.1:
-    resolution: {integrity: sha512-TlZarySCVEiap4K7BCvrsYZnX7jBbEkR55YMrk8ELcRbuAx6ydL+qoxqUt8Fq8VMvQyGt52icn6T7eJL1Q35KQ==, tarball: https://registry.npmmirror.com/@tanstack/query-core/-/query-core-5.14.1.tgz}
+  /@tanstack/query-core@5.14.2:
+    resolution: {integrity: sha512-QmoJvC72sSWs3hgGis8JdmlDvqLfYGWUK4UG6OR9Q6t28JMN9m2FDwKPqoSJ9YVocELCSjMt/FGjEiLfk8000Q==, tarball: https://registry.npmmirror.com/@tanstack/query-core/-/query-core-5.14.2.tgz}
     dev: false
 
-  /@tanstack/react-query@5.14.1(react@18.2.0):
-    resolution: {integrity: sha512-v7jhe/3jhChiR0XJbGHaG5WNPd/cURwzDGBCr4rzpUTeudPzxrtVRKsF1xJRLcJK3qH/0gIwTYHIPZ3gj+01Yw==, tarball: https://registry.npmmirror.com/@tanstack/react-query/-/react-query-5.14.1.tgz}
+  /@tanstack/react-query@5.14.2(react@18.2.0):
+    resolution: {integrity: sha512-SbOzV7UBW8ED3tOnyn6kqNGscnOAfoxShYlbvaQo/5528mDZKpvrwoL/1du1/ukSC6RMAiKmx95SrYqlwPzWDw==, tarball: https://registry.npmmirror.com/@tanstack/react-query/-/react-query-5.14.2.tgz}
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-core': 5.14.1
+      '@tanstack/query-core': 5.14.2
       react: 18.2.0
     dev: false
 
@@ -3452,8 +3452,8 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     dev: true
 
-  /@vitest/coverage-v8@1.0.4(vitest@1.0.4):
-    resolution: {integrity: sha512-xD6Yuql6RW0Ir/JJIs6rVrmnG2/KOWJF+IRX1oJQk5wGKGxbtdrYPbl+WTUn/4ICCQ2G20zbE1e8/nPNyAG5Vg==, tarball: https://registry.npmmirror.com/@vitest/coverage-v8/-/coverage-v8-1.0.4.tgz}
+  /@vitest/coverage-v8@1.1.0(vitest@1.1.0):
+    resolution: {integrity: sha512-kHQRk70vTdXAyQY2C0vKOHPyQD/R6IUzcGdO4vCuyr4alE5Yg1+Sk2jSdjlIrTTXdcNEs+ReWVM09mmSFJpzyQ==, tarball: https://registry.npmmirror.com/@vitest/coverage-v8/-/coverage-v8-1.1.0.tgz}
     peerDependencies:
       vitest: ^1.0.0
     dependencies:
@@ -3470,58 +3470,58 @@ packages:
       std-env: 3.6.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 1.0.4(@types/node@20.10.5)(@vitest/ui@1.0.4)
+      vitest: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@vitest/expect@1.0.4:
-    resolution: {integrity: sha512-/NRN9N88qjg3dkhmFcCBwhn/Ie4h064pY3iv7WLRsDJW7dXnEgeoa8W9zy7gIPluhz6CkgqiB3HmpIXgmEY5dQ==, tarball: https://registry.npmmirror.com/@vitest/expect/-/expect-1.0.4.tgz}
+  /@vitest/expect@1.1.0:
+    resolution: {integrity: sha512-9IE2WWkcJo2BR9eqtY5MIo3TPmS50Pnwpm66A6neb2hvk/QSLfPXBz2qdiwUOQkwyFuuXEUj5380CbwfzW4+/w==, tarball: https://registry.npmmirror.com/@vitest/expect/-/expect-1.1.0.tgz}
     dependencies:
-      '@vitest/spy': 1.0.4
-      '@vitest/utils': 1.0.4
+      '@vitest/spy': 1.1.0
+      '@vitest/utils': 1.1.0
       chai: 4.3.10
     dev: true
 
-  /@vitest/runner@1.0.4:
-    resolution: {integrity: sha512-rhOQ9FZTEkV41JWXozFM8YgOqaG9zA7QXbhg5gy6mFOVqh4PcupirIJ+wN7QjeJt8S8nJRYuZH1OjJjsbxAXTQ==, tarball: https://registry.npmmirror.com/@vitest/runner/-/runner-1.0.4.tgz}
+  /@vitest/runner@1.1.0:
+    resolution: {integrity: sha512-zdNLJ00pm5z/uhbWF6aeIJCGMSyTyWImy3Fcp9piRGvueERFlQFbUwCpzVce79OLm2UHk9iwaMSOaU9jVHgNVw==, tarball: https://registry.npmmirror.com/@vitest/runner/-/runner-1.1.0.tgz}
     dependencies:
-      '@vitest/utils': 1.0.4
+      '@vitest/utils': 1.1.0
       p-limit: 5.0.0
       pathe: 1.1.1
     dev: true
 
-  /@vitest/snapshot@1.0.4:
-    resolution: {integrity: sha512-vkfXUrNyNRA/Gzsp2lpyJxh94vU2OHT1amoD6WuvUAA12n32xeVZQ0KjjQIf8F6u7bcq2A2k969fMVxEsxeKYA==, tarball: https://registry.npmmirror.com/@vitest/snapshot/-/snapshot-1.0.4.tgz}
+  /@vitest/snapshot@1.1.0:
+    resolution: {integrity: sha512-5O/wyZg09V5qmNmAlUgCBqflvn2ylgsWJRRuPrnHEfDNT6tQpQ8O1isNGgo+VxofISHqz961SG3iVvt3SPK/QQ==, tarball: https://registry.npmmirror.com/@vitest/snapshot/-/snapshot-1.1.0.tgz}
     dependencies:
       magic-string: 0.30.5
       pathe: 1.1.1
       pretty-format: 29.7.0
     dev: true
 
-  /@vitest/spy@1.0.4:
-    resolution: {integrity: sha512-9ojTFRL1AJVh0hvfzAQpm0QS6xIS+1HFIw94kl/1ucTfGCaj1LV/iuJU4Y6cdR03EzPDygxTHwE1JOm+5RCcvA==, tarball: https://registry.npmmirror.com/@vitest/spy/-/spy-1.0.4.tgz}
+  /@vitest/spy@1.1.0:
+    resolution: {integrity: sha512-sNOVSU/GE+7+P76qYo+VXdXhXffzWZcYIPQfmkiRxaNCSPiLANvQx5Mx6ZURJ/ndtEkUJEpvKLXqAYTKEY+lTg==, tarball: https://registry.npmmirror.com/@vitest/spy/-/spy-1.1.0.tgz}
     dependencies:
       tinyspy: 2.2.0
     dev: true
 
-  /@vitest/ui@1.0.4(vitest@1.0.4):
-    resolution: {integrity: sha512-gd4p6e7pjukSe4joWS5wpnm/JcEfzCZUYkYWQOORqJK1mDJ0MOaXa/9BbPOEVO5TcvdnKvFJUdJpFHnqoyYwZA==, tarball: https://registry.npmmirror.com/@vitest/ui/-/ui-1.0.4.tgz}
+  /@vitest/ui@1.1.0(vitest@1.1.0):
+    resolution: {integrity: sha512-7yU1QRFBplz0xJqcgt+agcbrNFdBmLo8UUppdKkFmYx+Ih0+yMYQOyr7kOB+YoggJY/p5ZzXxdbiOz7NBX2y+w==, tarball: https://registry.npmmirror.com/@vitest/ui/-/ui-1.1.0.tgz}
     peerDependencies:
       vitest: ^1.0.0
     dependencies:
-      '@vitest/utils': 1.0.4
+      '@vitest/utils': 1.1.0
       fast-glob: 3.3.2
       fflate: 0.8.1
       flatted: 3.2.9
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 1.0.4(@types/node@20.10.5)(@vitest/ui@1.0.4)
+      vitest: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
     dev: true
 
-  /@vitest/utils@1.0.4:
-    resolution: {integrity: sha512-gsswWDXxtt0QvtK/y/LWukN7sGMYmnCcv1qv05CsY6cU/Y1zpGX1QuvLs+GO1inczpE6Owixeel3ShkjhYtGfA==, tarball: https://registry.npmmirror.com/@vitest/utils/-/utils-1.0.4.tgz}
+  /@vitest/utils@1.1.0:
+    resolution: {integrity: sha512-z+s510fKmYz4Y41XhNs3vcuFTFhcij2YF7F8VQfMEYAAUfqQh0Zfg7+w9xdgFGhPf3tX3TicAe+8BDITk6ampQ==, tarball: https://registry.npmmirror.com/@vitest/utils/-/utils-1.1.0.tgz}
     dependencies:
       diff-sequences: 29.6.3
       loupe: 2.3.7
@@ -5244,7 +5244,7 @@ packages:
       string.prototype.matchall: 4.0.10
     dev: true
 
-  /eslint-plugin-tailwindcss@3.13.0(tailwindcss@3.3.7):
+  /eslint-plugin-tailwindcss@3.13.0(tailwindcss@3.4.0):
     resolution: {integrity: sha512-Fcep4KDRLWaK3KmkQbdyKHG0P4GdXFmXdDaweTIPcgOP60OOuWFbh1++dufRT28Q4zpKTKaHwTsXPJ4O/EjU2Q==, tarball: https://registry.npmmirror.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.13.0.tgz}
     engines: {node: '>=12.13.0'}
     peerDependencies:
@@ -5252,7 +5252,7 @@ packages:
     dependencies:
       fast-glob: 3.3.2
       postcss: 8.4.32
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: true
 
   /eslint-plugin-toml@0.8.0(eslint@8.56.0):
@@ -5308,7 +5308,7 @@ packages:
       eslint-rule-composer: 0.3.0
     dev: true
 
-  /eslint-plugin-vitest@0.3.17(@typescript-eslint/eslint-plugin@6.14.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.0.4):
+  /eslint-plugin-vitest@0.3.17(@typescript-eslint/eslint-plugin@6.14.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.1.0):
     resolution: {integrity: sha512-JzljEhaJ3YDNJc4n2VTlOdMhElwLsQQprVtgY+eoKQkearKiFP53Vw3515J3jb4ZM8TVnpk7UsIFXM0gbhz+vQ==, tarball: https://registry.npmmirror.com/eslint-plugin-vitest/-/eslint-plugin-vitest-0.3.17.tgz}
     engines: {node: ^18.0.0 || >= 20.0.0}
     peerDependencies:
@@ -5324,7 +5324,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/utils': 6.13.2(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
-      vitest: 1.0.4(@types/node@20.10.5)(@vitest/ui@1.0.4)
+      vitest: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -9234,16 +9234,16 @@ packages:
       '@babel/runtime': 7.23.5
     dev: false
 
-  /tailwindcss-animate@1.0.7(tailwindcss@3.3.7):
+  /tailwindcss-animate@1.0.7(tailwindcss@3.4.0):
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==, tarball: https://registry.npmmirror.com/tailwindcss-animate/-/tailwindcss-animate-1.0.7.tgz}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: false
 
-  /tailwindcss@3.3.7:
-    resolution: {integrity: sha512-pjgQxDZPvyS/nG3ZYkyCvsbONJl7GdOejfm24iMt2ElYQQw8Jc4p0m8RdMp7mznPD0kUhfzwV3zAwa80qI0zmQ==, tarball: https://registry.npmmirror.com/tailwindcss/-/tailwindcss-3.3.7.tgz}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==, tarball: https://registry.npmmirror.com/tailwindcss/-/tailwindcss-3.4.0.tgz}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -10047,8 +10047,8 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite-node@1.0.4(@types/node@20.10.5):
-    resolution: {integrity: sha512-9xQQtHdsz5Qn8hqbV7UKqkm8YkJhzT/zr41Dmt5N7AlD8hJXw/Z7y0QiD5I8lnTthV9Rvcvi0QW7PI0Fq83ZPg==, tarball: https://registry.npmmirror.com/vite-node/-/vite-node-1.0.4.tgz}
+  /vite-node@1.1.0(@types/node@20.10.5):
+    resolution: {integrity: sha512-jV48DDUxGLEBdHCQvxL1mEh7+naVy+nhUUUaPAZLd3FJgXuxQiewHcfeZebbJ6onDqNGkP4r3MhQ342PRlG81Q==, tarball: https://registry.npmmirror.com/vite-node/-/vite-node-1.1.0.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
@@ -10094,42 +10094,6 @@ packages:
 
   /vite@5.0.10(@types/node@20.10.5):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==, tarball: https://registry.npmmirror.com/vite/-/vite-5.0.10.tgz}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || >=20.0.0
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      '@types/node': 20.10.5
-      esbuild: 0.19.8
-      postcss: 8.4.32
-      rollup: 4.6.1
-    optionalDependencies:
-      fsevents: 2.3.3
-    dev: true
-
-  /vite@5.0.7(@types/node@20.10.5):
-    resolution: {integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==, tarball: https://registry.npmmirror.com/vite/-/vite-5.0.7.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -10220,8 +10184,8 @@ packages:
       - universal-cookie
     dev: true
 
-  /vitest@1.0.4(@types/node@20.10.5)(@vitest/ui@1.0.4):
-    resolution: {integrity: sha512-s1GQHp/UOeWEo4+aXDOeFBJwFzL6mjycbQwwKWX2QcYfh/7tIerS59hWQ20mxzupTJluA2SdwiBuWwQHH67ckg==, tarball: https://registry.npmmirror.com/vitest/-/vitest-1.0.4.tgz}
+  /vitest@1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0):
+    resolution: {integrity: sha512-oDFiCrw7dd3Jf06HoMtSRARivvyjHJaTxikFxuqJjO76U436PqlVw1uLn7a8OSPrhSfMGVaRakKpA2lePdw79A==, tarball: https://registry.npmmirror.com/vitest/-/vitest-1.1.0.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -10246,12 +10210,12 @@ packages:
         optional: true
     dependencies:
       '@types/node': 20.10.5
-      '@vitest/expect': 1.0.4
-      '@vitest/runner': 1.0.4
-      '@vitest/snapshot': 1.0.4
-      '@vitest/spy': 1.0.4
-      '@vitest/ui': 1.0.4(vitest@1.0.4)
-      '@vitest/utils': 1.0.4
+      '@vitest/expect': 1.1.0
+      '@vitest/runner': 1.1.0
+      '@vitest/snapshot': 1.1.0
+      '@vitest/spy': 1.1.0
+      '@vitest/ui': 1.1.0(vitest@1.1.0)
+      '@vitest/utils': 1.1.0
       acorn-walk: 8.3.1
       cac: 6.7.14
       chai: 4.3.10
@@ -10265,8 +10229,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.8.1
-      vite: 5.0.7(@types/node@20.10.5)
-      vite-node: 1.0.4(@types/node@20.10.5)
+      vite: 5.0.10(@types/node@20.10.5)
+      vite-node: 1.1.0(@types/node@20.10.5)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
