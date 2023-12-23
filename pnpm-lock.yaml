@@ -451,8 +451,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       lucide-react:
-        specifier: ^0.298.0
-        version: 0.298.0(react@18.2.0)
+        specifier: ^0.300.0
+        version: 0.300.0(react@18.2.0)
       next-themes:
         specifier: ^0.2.1
         version: 0.2.1(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
@@ -472,11 +472,11 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1(react-dom@18.2.0)(react@18.2.0)
       react-i18next:
-        specifier: ^13.5.0
-        version: 13.5.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^14.0.0
+        version: 14.0.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0)
       tailwind-merge:
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^2.2.0
+        version: 2.2.0
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.0)
@@ -512,8 +512,8 @@ importers:
         specifier: ^8.4.32
         version: 8.4.32
       shadcn-ui:
-        specifier: ^0.4.1
-        version: 0.4.1(typescript@5.3.3)
+        specifier: ^0.5.0
+        version: 0.5.0(typescript@5.3.3)
       tailwindcss:
         specifier: ^3.4.0
         version: 3.4.0
@@ -3967,7 +3967,7 @@ packages:
     resolution: {integrity: sha512-6t10qk83GOG8p0vKmaCr8eiilZwO171AvbROMtvvNiwrTly62t+7XkA8RdIIVbpMhCASAsxgAzdRSwh6nw/5Dg==, tarball: https://registry.npmmirror.com/ast-types/-/ast-types-0.16.1.tgz}
     engines: {node: '>=4'}
     dependencies:
-      tslib: registry.npmmirror.com/tslib@2.6.2
+      tslib: 2.6.2
     dev: true
 
   /asynciterator.prototype@1.0.0:
@@ -7019,8 +7019,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /lucide-react@0.298.0(react@18.2.0):
-    resolution: {integrity: sha512-tWoxZ663Zf/n8VxXTHnTJsU/w1ysWT1LORnIL1pzqElFdSqBhWbZeJ3sLdCZ5FpzpbkpkYEtluhuTyG2BTDYNQ==, tarball: https://registry.npmmirror.com/lucide-react/-/lucide-react-0.298.0.tgz}
+  /lucide-react@0.300.0(react@18.2.0):
+    resolution: {integrity: sha512-rQxUUCmWAvNLoAsMZ5j04b2+OJv6UuNLYMY7VK0eVlm4aTwUEjEEHc09/DipkNIlhXUSDn2xoyIzVT0uh7dRsg==, tarball: https://registry.npmmirror.com/lucide-react/-/lucide-react-0.300.0.tgz}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -8480,8 +8480,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-i18next@13.5.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-CFJ5NDGJ2MUyBohEHxljOq/39NQ972rh1ajnadG9BjTk+UXbHLq4z5DKEbEQBDoIhUmmbuS/fIMJKo6VOax1HA==, tarball: https://registry.npmmirror.com/react-i18next/-/react-i18next-13.5.0.tgz}
+  /react-i18next@14.0.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OCrS8rHNAmnr8ggGRDxjakzihrMW7HCbsplduTm3EuuQ6fyvWGT41ksZpqbduYoqJurBmEsEVZ1pILSUWkHZng==, tarball: https://registry.npmmirror.com/react-i18next/-/react-i18next-14.0.0.tgz}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
@@ -8869,8 +8869,8 @@ packages:
       has-property-descriptors: 1.0.0
     dev: true
 
-  /shadcn-ui@0.4.1(typescript@5.3.3):
-    resolution: {integrity: sha512-6SMlEzoJzbkPFZ1zP01bOi90reiV8yYnBeTmqys37YJPfnNKDk8mtPq3jtoYGDLIEcmLdcI/vY12qxzxDCTKkw==, tarball: https://registry.npmmirror.com/shadcn-ui/-/shadcn-ui-0.4.1.tgz}
+  /shadcn-ui@0.5.0(typescript@5.3.3):
+    resolution: {integrity: sha512-mlQmeEPtQJU5VRNjUeTLAH97yHhwcH1IRSVFJN2aKlBA1yOcip9ELTRYAH7Bj8OEiJhHT1OSpn5zlHEWxzhakg==, tarball: https://registry.npmmirror.com/shadcn-ui/-/shadcn-ui-0.5.0.tgz}
     hasBin: true
     dependencies:
       '@antfu/ni': 0.21.12
@@ -9282,8 +9282,8 @@ packages:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==, tarball: https://registry.npmmirror.com/tabbable/-/tabbable-6.2.0.tgz}
     dev: true
 
-  /tailwind-merge@2.1.0:
-    resolution: {integrity: sha512-l11VvI4nSwW7MtLSLYT4ldidDEUwQAMWuSHk7l4zcXZDgnCRa0V3OdCwFfM7DCzakVXMNRwAeje9maFFXT71dQ==, tarball: https://registry.npmmirror.com/tailwind-merge/-/tailwind-merge-2.1.0.tgz}
+  /tailwind-merge@2.2.0:
+    resolution: {integrity: sha512-SqqhhaL0T06SW59+JVNfAqKdqLs0497esifRrZ7jOaefP3o64fdFNDMrAQWZFMxTLJPiHVjRLUywT8uFz1xNWQ==, tarball: https://registry.npmmirror.com/tailwind-merge/-/tailwind-merge-2.2.0.tgz}
     dependencies:
       '@babel/runtime': 7.23.5
     dev: false

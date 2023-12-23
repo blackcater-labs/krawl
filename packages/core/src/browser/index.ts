@@ -1,6 +1,6 @@
 import type { PuppeteerNode } from 'puppeteer'
 import type { PuppeteerExtra } from 'puppeteer-extra'
-import type { BrowserConfig } from './types'
+import type { BrowserConfig } from '../types'
 
 const DEFAULT_ARGS = [
   '--enable-features=NetworkService,NetworkServiceInProcess',
