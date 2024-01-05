@@ -13,12 +13,12 @@ const nextConfig = {
 
   output: 'export',
 
-  rewrites: async () => [
-    {
-      source: '/api/:path*',
-      destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
-    },
-  ],
+  // rewrites: async () => [
+  //   {
+  //     source: '/api/:path*',
+  //     destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
+  //   },
+  // ],
 }
 
 export default withBundleAnalyzer(nextConfig)
