@@ -1,1 +1,0 @@
-# Krawl VSCode Extension

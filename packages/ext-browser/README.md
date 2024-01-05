@@ -1,1 +1,0 @@
-# Krawl Chrome Extension

@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  postgres:
+    container_name: postgres_db
+    image: postgres:15.5
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_USER: test
+      POSTGRES_DB: test
+    ports:
+      - "5432:5432"
+  redis:
+    container_name: redis_db
+    image: redis:7.2
+    restart: always
+    ports:
+      - "6379:6379"

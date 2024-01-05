@@ -21,9 +21,10 @@ export default antfu(
     },
   }),
   {
-    files: ['packages/ui/**/*.tsx'],
+    files: ['packages/ui/**/*.{ts,tsx}'],
     rules: {
       'react-refresh/only-export-components': 'off',
+      'node/prefer-global/process': 'off',
     },
   },
 )

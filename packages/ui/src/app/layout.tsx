@@ -1,73 +1,26 @@
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
-import { AtomIcon, BracesIcon, BugIcon, CableIcon, DatabaseIcon, Loader2Icon, PackageIcon, PlayIcon, PowerIcon, TerminalSquareIcon } from 'lucide-react'
+import type { Metadata } from 'next'
 
-import { Outlet } from '@tanstack/react-router'
-import { Header } from './_components/Header'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Button } from '@/components/ui/button'
+import { Providers } from './Providers'
+import { Toaster } from '@/components/Toaster'
+import './globals.css'
 
-function RootLayout() {
-  return (
-    <>
-      <ScrollArea className="h-screen w-screen">
-        <Header />
-        <main className="container mt-[54px]">
-          {/* Play */}
-          <Button className="" variant="ghost">
-            <PlayIcon className="mr-2 h-4 w-4" />
-            Start
-          </Button>
-          {/* Power */}
-          <Button className="" variant="ghost">
-            <PowerIcon className="mr-2 h-4 w-4" />
-            Stop
-          </Button>
-          {/* Loader */}
-          <Button className="" variant="ghost">
-            <Loader2Icon className="mr-2 h-4 w-4 animate-spin" />
-            Loader
-          </Button>
-          {/* Storage */}
-          <Button className="" variant="ghost">
-            <DatabaseIcon className="mr-2 h-4 w-4" />
-            Storage
-          </Button>
-          {/* Config */}
-          <Button className="" variant="ghost">
-            <BracesIcon className="mr-2 h-4 w-4" />
-            Config
-          </Button>
-          {/* Plugins */}
-          <Button className="" variant="ghost">
-            <PackageIcon className="mr-2 h-4 w-4" />
-            Plugins
-          </Button>
-          {/* Graph */}
-          <Button className="" variant="ghost">
-            <AtomIcon className="mr-2 h-4 w-4" />
-            Graph
-          </Button>
-          {/* Log */}
-          <Button className="" variant="ghost">
-            <TerminalSquareIcon className="mr-2 h-4 w-4" />
-            Log
-          </Button>
-          {/* Audit */}
-          <Button className="" variant="ghost">
-            <BugIcon className="mr-2 h-4 w-4" />
-            Audit
-          </Button>
-          {/* Progess */}
-          <Button className="" variant="ghost">
-            <CableIcon className="mr-2 h-4 w-4" />
-            Progress
-          </Button>
-          <Outlet />
-        </main>
-      </ScrollArea>
-      {import.meta.env.DEV && <TanStackRouterDevtools position="bottom-right" />}
-    </>
-  )
+export const metadata: Metadata = {
+  title: 'Krawl',
 }
 
-export default RootLayout
+interface RootLayoutProps {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <html lang="en">
+      <body className="bg-background text-foreground">
+        <Providers>
+          {children}
+        </Providers>
+        <Toaster />
+      </body>
+    </html>
+  )
+}
