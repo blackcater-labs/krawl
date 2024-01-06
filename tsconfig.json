@@ -7,10 +7,9 @@
     "moduleResolution": "node",
     "paths": {
       "@krawl/archive": ["./packages/archive/src/index.ts"],
-      "@krawl/cli": ["./packages/cli/src/index.ts"],
       "@krawl/core": ["./packages/core/src/index.ts"],
-      "@krawl/create-app": ["./packages/create-app/src/index.ts"],
       "@krawl/robotstxt": ["./packages/robotstxt/src/index.ts"],
+      "@krawl/server": ["./packages/server/src/index.ts"],
       "@krawl/test-utils": ["./packages/test-utils/src/index.ts"],
       "@krawl/ui": ["./packages/ui/src/index.ts"],
       "@krawl/utils": ["./packages/utils/src/index.ts"]
