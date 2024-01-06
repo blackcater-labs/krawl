@@ -17,6 +17,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "examples:fastify": "pnpm run --filter @examples/server-fastify dev",
     "dev:docs": "pnpm run --filter docs dev",
     "dev:ui": "pnpm run --filter ui dev",
     "build": "turbo build",

@@ -1,5 +1,5 @@
 {
-  "name": "@examples/server-koa",
+  "name": "@examples/server-fastify",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -26,7 +26,7 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@krawl/koa-adapter": "workspace:*",
+    "@krawl/fastify": "workspace:*",
     "@krawl/server": "workspace:*"
   },
   "devDependencies": {

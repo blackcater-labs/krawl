@@ -8,6 +8,11 @@
     "paths": {
       "@krawl/archive": ["./packages/archive/src/index.ts"],
       "@krawl/core": ["./packages/core/src/index.ts"],
+      "@krawl/express": ["./packages/express/src/index.ts"],
+      "@krawl/fastify": ["./packages/fastify/src/index.ts"],
+      "@krawl/hapi": ["./packages/hapi/src/index.ts"],
+      "@krawl/koa": ["./packages/koa/src/index.ts"],
+      "@krawl/nestjs": ["./packages/nestjs/src/index.ts"],
       "@krawl/robotstxt": ["./packages/robotstxt/src/index.ts"],
       "@krawl/server": ["./packages/server/src/index.ts"],
       "@krawl/test-utils": ["./packages/test-utils/src/index.ts"],
