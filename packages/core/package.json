@@ -44,7 +44,7 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "connect": "^3.7.0",
+    "debug": "^4.3.4",
     "defu": "^6.1.4",
     "http-proxy-agent": "^7.0.0",
     "https-proxy-agent": "^7.0.2",
@@ -60,11 +60,10 @@
     "socks-proxy-agent": "^8.0.2",
     "ufo": "^1.3.2",
     "unstorage": "^1.10.1",
-    "ws": "^8.16.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20.10.6",
+    "@types/node": "^20.10.7",
     "rimraf": "^5.0.5",
     "unbuild": "^2.0.0"
   }

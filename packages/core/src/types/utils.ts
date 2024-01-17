@@ -1,4 +1,5 @@
 export type Awaitable<T> = T | PromiseLike<T>
+export type Promisable<T> = T | PromiseLike<T>
 
 export type Optional<T> = T | undefined
 

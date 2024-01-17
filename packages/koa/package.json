@@ -1,5 +1,5 @@
 {
-  "name": "@krawl/koa-adapter",
+  "name": "@krawl/koa",
   "type": "module",
   "version": "0.0.1",
   "description": "",
@@ -50,7 +50,7 @@
     "koa-static": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.6",
+    "@types/node": "^20.10.7",
     "rimraf": "^5.0.5",
     "unbuild": "^2.0.0"
   }
